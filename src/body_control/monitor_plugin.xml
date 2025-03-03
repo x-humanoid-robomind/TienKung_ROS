@@ -1,0 +1,7 @@
+<library path="lib/libmonitor_plugin">
+  <class name="body_control/MonitorPlugin" type="body_control::MonitorPlugin" base_class_type="nodelet::Nodelet">
+    <description> 
+      A node to add a value and republish.
+    </description>
+  </class>
+</library>

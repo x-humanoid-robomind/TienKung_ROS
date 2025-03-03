@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="nodelet" type="nodelet" name="nodelet_manager_2"  args="manager" output="screen"/>
+    <node pkg="nodelet" type="nodelet" name="rl_control_new" args="load rl_control_new/RLControlNew nodelet_manager_2" output="screen" />
+</launch>

@@ -1,0 +1,7 @@
+<library path="lib/libvn100_plugin">
+  <class name="vn100/VN100ImuPlugin" type="vn100::VN100ImuPlugin" base_class_type="nodelet::Nodelet">
+    <description> 
+      A node to add a value and republish.
+    </description>
+  </class>
+</library>

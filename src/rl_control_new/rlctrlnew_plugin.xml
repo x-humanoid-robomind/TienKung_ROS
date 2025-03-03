@@ -1,0 +1,7 @@
+<library path="lib/librlctrlnew_plugin">
+  <class name="rl_control_new/RLControlNew" type="rl_control_new::RLControlNewPlugin" base_class_type="nodelet::Nodelet">
+    <description> 
+      A node to add a value and republish.
+    </description>
+  </class>
+</library>

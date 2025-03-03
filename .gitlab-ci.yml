@@ -1,0 +1,20 @@
+image: 10.0.3.108:5000/ubuntu22_ros_noetic_autolabor:v0.4
+
+stages:          # List of stages for jobs, and their order of execution
+  - build
+
+build:       # This job runs in the build stage, which runs first.
+  stage: build
+  script:
+    - echo "Compile start:${PWD}"
+    - source /opt/ros/noetic/setup.bash
+    - cd /home/ubuntu/devops && bash release.sh \
+          --workdir=${CI_PROJECT_DIR} \
+          --deploy_dir=/home/ubuntu/rosws \
+          --product=TG-Lite \
+          --platform=linux-x86 \
+          --project_id=122 \
+          --specs=general \
+          --enable_upload=1 \
+          --version=${CI_COMMIT_TAG}
+

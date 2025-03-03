@@ -1,0 +1,23 @@
+<package>
+  <name>usb_sbus</name>
+  <version>1.1.5</version>
+  <description>The usb_sbus collects messages from the sbus, and publishes a summary of their data in a
+     friendlier message format.</description>
+  <maintainer email="james.zhang@ubtrobot.com">Devon Ash</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://www.ros.org/wiki/</url>
+
+  <author>james.zhang</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>u_common</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>u_common</run_depend>
+</package>

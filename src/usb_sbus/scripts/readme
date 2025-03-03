@@ -1,0 +1,8 @@
+#卸载brltty
+sudo apt remove brltty
+
+#拷贝sbus的usb设备规则文件
+sudo cp 50-sbus-usb.rules /etc/udev/rules.d/
+
+#重新加载规则文件
+sudo udevadm control --reload

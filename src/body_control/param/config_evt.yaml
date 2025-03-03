@@ -1,0 +1,11 @@
+auto_init: true
+enable_check_ready: true
+net_card_name: "enp4s0"
+
+# 0 - standard, 1 - extended, 2 - time_sharing_mixed
+slave_mode:
+  - 0   # waist
+  - 0   # nothing
+  - 0   # left_leg
+  - 0   # right_leg
+  - 0   # xsens_imu

@@ -1,0 +1,21 @@
+repositories:
+    vcsdeps/bodyctrl_msgs:
+        type: git
+        url: git@10.0.3.101:uhpg/common/bodyctrl_msgs.git
+        version: dev_ros1
+    vcsdeps/diagnose:
+        type: git
+        url: git@10.0.3.101:uhpg/common/diagnose.git
+        version: dev_ros1
+    vcsdeps/grpc:
+        type: git
+        url: git@10.0.3.101:kai.yang/grpc.git
+        version: linux-x86_64-release
+    vcsdeps/slam:
+        type: git
+        url: git@10.0.3.101:kai.yang/slam.git
+        version: linux-x86_64-release
+    vcsdeps/libevent:
+        type: git
+        url: git@10.0.3.101:kai.yang/libevent.git
+        version: linux-x86_64-release

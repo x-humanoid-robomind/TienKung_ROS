@@ -1,0 +1,7 @@
+<library path="lib/libtest_plugin">
+  <class name="body_control/TestPlugin" type="body_control::TestPlugin" base_class_type="nodelet::Nodelet">
+    <description> 
+      A node to add a value and republish.
+    </description>
+  </class>
+</library>
