@@ -30,3 +30,8 @@ TienKung-ROS （项目根目录）
  │   │   ├── 📂 rl_control_new    # 运动规划
  │   │   ├── 📂 vcsdeps
 ```
+##  关于 Git LFS
+本仓库使用了 **Git LFS（Large File Storage）** 存储部分大文件（超过 100MB）。  
+**克隆后请运行以下命令以确保文件完整性：**
+git lfs install
+git lfs pull
