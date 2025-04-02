@@ -1,0 +1,7 @@
+<library path="lib/libxsensimu_plugin">
+  <class name="xsens_imu/XSensImuPlugin" type="xsens_imu::XSensImuPlugin" base_class_type="nodelet::Nodelet">
+    <description> 
+      A node to add a value and republish.
+    </description>
+  </class>
+</library>

@@ -1,0 +1,5 @@
+# motor_name_id, slave_index, passage_req, passage_resp, motor_id
+ey_motors_mapping:
+  - [19, 0, 1, 2, 1] # head - 1
+  - [20, 0, 3, 4, 2] # head - 2
+  - [21, 0, 5, 6, 3] # head - 3

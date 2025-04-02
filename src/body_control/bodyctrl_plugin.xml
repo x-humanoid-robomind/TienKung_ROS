@@ -1,0 +1,7 @@
+<library path="lib/libbodyctrl_plugin">
+  <class name="body_control/BodyControl" type="body_control::BodyControl" base_class_type="nodelet::Nodelet">
+    <description> 
+      Motor driver node.
+    </description>
+  </class>
+</library>

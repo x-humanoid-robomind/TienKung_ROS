@@ -1,0 +1,22 @@
+<launch>
+    <node pkg="nodelet" type="nodelet" name="nodelet_manager"  args="manager" output="screen"/>
+
+    <node pkg="nodelet" type="nodelet" name="BodyControl" args="load body_control/BodyControl nodelet_manager" output="screen">
+        <rosparam command="load" file="$(find body_control)/param/config.yaml" />
+        <rosparam command="load" file="$(find body_control)/param/motor_setting_simple.yaml" />
+        <rosparam command="load" file="$(find body_control)/param/xsens_imu_setting.yaml" />
+        <rosparam command="load" file="$(find body_control)/param/power_setting_evt.yaml" />
+    </node>
+
+    <node pkg="nodelet" type="nodelet" name="Monitor" args="load body_control/MonitorPlugin nodelet_manager" output="screen">
+        <rosparam command="load" file="$(find body_control)/param/motor_setting_simple.yaml" />
+    </node>  
+
+    <param name="xml_config_file" type="string" value="$(find diagnose)/param/tiangong.xml" />
+    <node pkg="nodelet" type="nodelet" name="nodelet_manager_diagnose"  args="manager" output="screen"/>
+    <node pkg="nodelet" type="nodelet" name="DebuggerNodelet" args="load debugger/DebuggerNodelet nodelet_manager_diagnose" output="screen">
+      <param name="xml_config_file" type="string" value="1234" />
+    </node>
+
+    <node pkg="usb_sbus" type="usb_sbus_node" name="usb_sbus_node" output="screen" />
+</launch>
